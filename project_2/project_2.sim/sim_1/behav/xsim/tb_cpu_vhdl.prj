@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../project solution/code/sources/cpu.vhd" \
+"../../../../../project solution/code/sources/fsm_configuration.vhd" \
+"../../../../../project solution/code/sources/random_delay.vhd" \
+"../../../../../project solution/code/sources/timer.vhd" \
+"../../../../../project solution/code/testBenchs/tb_cpu.vhd" \
+
+# Do not sort compile order
+nosort

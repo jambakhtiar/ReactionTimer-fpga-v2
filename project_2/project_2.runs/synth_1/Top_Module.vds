@@ -1,0 +1,464 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:13:54 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sat Jun  1 08:20:36 2024
+# Process ID: 5317
+# Current directory: /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project_2/project_2.runs/synth_1
+# Command line: vivado -log Top_Module.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Module.tcl
+# Log file: /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project_2/project_2.runs/synth_1/Top_Module.vds
+# Journal file: /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project_2/project_2.runs/synth_1/vivado.jou
+# Running On: jam-Precision-5510, OS: Linux, CPU Frequency: 3257.667 MHz, CPU Physical cores: 4, Host memory: 16425 MB
+#-----------------------------------------------------------
+source Top_Module.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1341.477 ; gain = 0.023 ; free physical = 9210 ; free virtual = 14606
+Command: synth_design -top Top_Module -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5355
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1760.129 ; gain = 415.684 ; free physical = 8528 ; free virtual = 13929
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_Module' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:32]
+INFO: [Synth 8-3491] module 'clk_div' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/clk_div.vhd:6' bound to instance 'uut0' of component 'clk_div' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/clk_div.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/clk_div.vhd:14]
+INFO: [Synth 8-3491] module 'mili_sec' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/mili_sec.vhd:5' bound to instance 'uut1' of component 'mili_sec' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:141]
+INFO: [Synth 8-638] synthesizing module 'mili_sec' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/mili_sec.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'mili_sec' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/mili_sec.vhd:13]
+INFO: [Synth 8-3491] module 'clk_1sec' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/clk_1sec.vhd:4' bound to instance 'uut2' of component 'clk_1sec' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'clk_1sec' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/clk_1sec.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'clk_1sec' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/clk_1sec.vhd:12]
+INFO: [Synth 8-3491] module 'debouncer' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/debouncer.vhd:6' bound to instance 'uut3_key0' of component 'debouncer' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/debouncer.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/debouncer.vhd:15]
+INFO: [Synth 8-3491] module 'debouncer' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/debouncer.vhd:6' bound to instance 'uut3_key1' of component 'debouncer' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:165]
+INFO: [Synth 8-3491] module 'debouncer' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/debouncer.vhd:6' bound to instance 'uut3_key2' of component 'debouncer' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:172]
+INFO: [Synth 8-3491] module 'debouncer' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/debouncer.vhd:6' bound to instance 'uut3_key3' of component 'debouncer' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:179]
+INFO: [Synth 8-3491] module 'cpu' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:17' bound to instance 'uut4' of component 'cpu' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:189]
+INFO: [Synth 8-638] synthesizing module 'cpu' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:41]
+INFO: [Synth 8-3491] module 'fsm_configuration' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/fsm_configuration.vhd:5' bound to instance 'uut1' of component 'fsm_configuration' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'fsm_configuration' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/fsm_configuration.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'fsm_configuration' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/fsm_configuration.vhd:17]
+INFO: [Synth 8-3491] module 'random_delay' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/random_delay.vhd:5' bound to instance 'uut2' of component 'random_delay' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:138]
+INFO: [Synth 8-638] synthesizing module 'random_delay' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/random_delay.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'random_delay' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/random_delay.vhd:13]
+INFO: [Synth 8-3491] module 'timer' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/timer.vhd:5' bound to instance 'spA' of component 'timer' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:147]
+INFO: [Synth 8-638] synthesizing module 'timer' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/timer.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'timer' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/timer.vhd:16]
+INFO: [Synth 8-3491] module 'timer' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/timer.vhd:5' bound to instance 'spB' of component 'timer' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:156]
+WARNING: [Synth 8-614] signal 'config_done' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'timer_done' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'sp1_done' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'sp2_done' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'sp1_time_w' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'sp2_time_w' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'test_cycles_reg' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'sp1_time' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'sp2_time' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'score_playerA_reg' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'score_playerB_reg' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'target_score_reg' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'sec_done' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'sec5_done' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:184]
+WARNING: [Synth 8-614] signal 'sec_en' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:337]
+WARNING: [Synth 8-614] signal 'sec_count' is read in the process but is not in the sensitivity list [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:337]
+INFO: [Synth 8-256] done synthesizing module 'cpu' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:41]
+INFO: [Synth 8-3491] module 'BCD' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/BCD.vhd:5' bound to instance 'uut5_target_Score' of component 'BCD' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'BCD' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/BCD.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'BCD' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/BCD.vhd:13]
+INFO: [Synth 8-3491] module 'display_decoder' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:6' bound to instance 'uut6_target_scoreTens' of component 'display_decoder' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'display_decoder' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'display_decoder' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:13]
+INFO: [Synth 8-3491] module 'display_decoder' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:6' bound to instance 'uut6_target_scoreUnits' of component 'display_decoder' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:221]
+INFO: [Synth 8-3491] module 'BCD' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/BCD.vhd:5' bound to instance 'uut5_test_cycles' of component 'BCD' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:229]
+INFO: [Synth 8-3491] module 'display_decoder' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:6' bound to instance 'uut6_test_cyclesTens' of component 'display_decoder' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:236]
+INFO: [Synth 8-3491] module 'display_decoder' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:6' bound to instance 'uut6_test_cyclesUnits' of component 'display_decoder' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:241]
+INFO: [Synth 8-3491] module 'BCD' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/BCD.vhd:5' bound to instance 'uut5_platerA' of component 'BCD' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:249]
+INFO: [Synth 8-3491] module 'BCD' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/BCD.vhd:5' bound to instance 'uut5_platerB' of component 'BCD' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:254]
+INFO: [Synth 8-3491] module 'display_decoder' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:6' bound to instance 'uut6_platerATens' of component 'display_decoder' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:262]
+INFO: [Synth 8-3491] module 'display_decoder' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:6' bound to instance 'uut6_platerAUnits' of component 'display_decoder' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:267]
+INFO: [Synth 8-3491] module 'display_decoder' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:6' bound to instance 'uut6_platerBTens' of component 'display_decoder' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:273]
+INFO: [Synth 8-3491] module 'display_decoder' declared at '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/display_decoder.vhd:6' bound to instance 'uut6_platerBUnits' of component 'display_decoder' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:278]
+INFO: [Synth 8-256] done synthesizing module 'Top_Module' (0#1) [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/Top_Module.vhd:32]
+WARNING: [Synth 8-7129] Port clk_in in module clk_div is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1837.098 ; gain = 492.652 ; free physical = 8424 ; free virtual = 13831
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1854.910 ; gain = 510.465 ; free physical = 8422 ; free virtual = 13829
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1862.914 ; gain = 518.469 ; free physical = 8421 ; free virtual = 13828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'key_state_reg' in module 'debouncer'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_configuration'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'timer'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'cpu'
+INFO: [Synth 8-802] inferred FSM for state register 'state_5s_reg' in module 'cpu'
+WARNING: [Synth 8-327] inferring latch for variable 'clk_1hz_reg_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/clk_div.vhd:22]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                key_free |                              001 |                               00
+             key_pressed |                              010 |                               01
+            key_released |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'key_state_reg' using encoding 'one-hot' in module 'debouncer'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                  config |                              010 |                               01
+                 confirm |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_configuration'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              001 |                               00
+                     run |                              010 |                               01
+                    stop |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'timer'
+WARNING: [Synth 8-327] inferring latch for variable 'config_enable_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:132]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 idle_5s |                              001 |                               00
+                  run_5s |                              010 |                               01
+                 stop_5s |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_5s_reg' using encoding 'one-hot' in module 'cpu'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:179]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:179]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                     000000000001 |                             0000
+                  config |                     000000000010 |                             0001
+          wait_for_start |                     000000000100 |                             0010
+             delay_timer |                     000000001000 |                             0011
+                   sp1_2 |                     000000010000 |                             1010
+                   sp2_2 |                     000000100000 |                             1011
+                 penalty |                     000001000000 |                             1100
+                stimulus |                     000010000000 |                             0100
+           points_assign |                     000100000000 |                             0101
+           compare_score |                     001000000000 |                             0111
+                  winner |                     010000000000 |                             1001
+               sec_delay |                     100000000000 |                             1000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'cpu'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:179]
+WARNING: [Synth 8-327] inferring latch for variable 'test_cycles_reg_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:190]
+WARNING: [Synth 8-327] inferring latch for variable 'score_playerA_reg_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:191]
+WARNING: [Synth 8-327] inferring latch for variable 'score_playerB_reg_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:192]
+WARNING: [Synth 8-327] inferring latch for variable 'stimulus_playerA_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:193]
+WARNING: [Synth 8-327] inferring latch for variable 'stimulus_playerB_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:194]
+WARNING: [Synth 8-327] inferring latch for variable 'sp2_time_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:255]
+WARNING: [Synth 8-327] inferring latch for variable 'sp1_time_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:254]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_done_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:340]
+WARNING: [Synth 8-327] inferring latch for variable 'sec5_en_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:199]
+WARNING: [Synth 8-327] inferring latch for variable 'stopwatch_enable_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:151]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_count_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:339]
+WARNING: [Synth 8-327] inferring latch for variable 'sec_en_reg' [/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project solution/code/sources/cpu.vhd:198]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1884.578 ; gain = 540.133 ; free physical = 8382 ; free virtual = 13792
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 2     
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input   14 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 20    
+	   2 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   3 Input   24 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	  12 Input   12 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 9     
+	   2 Input    7 Bit        Muxes := 8     
+	   2 Input    6 Bit        Muxes := 1     
+	  12 Input    6 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 4     
+	  12 Input    4 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 4     
+	   3 Input    1 Bit        Muxes := 16    
+	   2 Input    1 Bit        Muxes := 14    
+	  12 Input    1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3332] Sequential element (uut0/clk_1hz_reg_reg) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut3_key1/FSM_onehot_key_state_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut3_key1/FSM_onehot_key_state_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut3_key1/FSM_onehot_key_state_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut3_key3/FSM_onehot_key_state_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut3_key3/FSM_onehot_key_state_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut3_key3/FSM_onehot_key_state_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/spA/FSM_onehot_state_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/spA/FSM_onehot_state_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/spA/FSM_onehot_state_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/spB/FSM_onehot_state_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/spB/FSM_onehot_state_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/spB/FSM_onehot_state_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/config_enable_reg) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_state_5s_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_state_5s_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_state_5s_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[11]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[10]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[9]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[8]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[7]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[6]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[5]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[4]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[3]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_current_state_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[11]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[10]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[9]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[8]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[7]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[6]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[5]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[4]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[3]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/FSM_onehot_next_state_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/test_cycles_reg_reg[5]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerA_reg_reg[5]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerA_reg_reg[4]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerA_reg_reg[3]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerA_reg_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerA_reg_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerA_reg_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerB_reg_reg[5]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerB_reg_reg[4]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerB_reg_reg[3]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerB_reg_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerB_reg_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/score_playerB_reg_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/stimulus_playerA_reg[3]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/stimulus_playerB_reg[3]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[23]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[22]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[21]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[20]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[19]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[18]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[17]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[16]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[15]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[14]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[13]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[12]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[11]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[10]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[9]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[8]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[7]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[6]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[5]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[4]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[3]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[2]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[1]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp2_time_reg[0]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[23]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[22]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[21]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[20]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[19]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[18]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[17]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[16]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[15]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[14]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[13]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[12]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[11]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[10]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[9]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[8]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[7]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[6]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[5]) is unused and will be removed from module Top_Module.
+WARNING: [Synth 8-3332] Sequential element (uut4/sp1_time_reg[4]) is unused and will be removed from module Top_Module.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8194 ; free virtual = 13633
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8194 ; free virtual = 13633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8194 ; free virtual = 13633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8157 ; free virtual = 13631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8157 ; free virtual = 13631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8157 ; free virtual = 13631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8157 ; free virtual = 13631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8157 ; free virtual = 13631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8157 ; free virtual = 13631
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |     3|
+|4     |LUT2   |     3|
+|5     |LUT3   |     4|
+|6     |LUT4   |    15|
+|7     |LUT5   |    25|
+|8     |LUT6   |    18|
+|9     |FDCE   |    39|
+|10    |FDPE   |     5|
+|11    |IBUF   |     4|
+|12    |OBUF   |    64|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+------------------+------+
+|      |Instance    |Module            |Cells |
++------+------------+------------------+------+
+|1     |top         |                  |   185|
+|2     |  uut1      |mili_sec          |    42|
+|3     |  uut2      |clk_1sec          |    28|
+|4     |  uut3_key0 |debouncer         |     6|
+|5     |  uut3_key2 |debouncer_0       |     7|
+|6     |  uut4      |cpu               |    32|
+|7     |    uut1    |fsm_configuration |    32|
++------+------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8157 ; free virtual = 13631
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 145 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2050.625 ; gain = 706.180 ; free physical = 8157 ; free virtual = 13631
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2050.633 ; gain = 706.180 ; free physical = 8157 ; free virtual = 13631
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2054.594 ; gain = 0.000 ; free physical = 8442 ; free virtual = 13916
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2191.309 ; gain = 0.000 ; free physical = 8364 ; free virtual = 13849
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 6e1cc38b
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:18 . Memory (MB): peak = 2191.344 ; gain = 849.867 ; free physical = 8380 ; free virtual = 13845
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1670.768; main = 1461.671; forked = 377.495
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3024.844; main = 2191.312; forked = 990.230
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2215.320 ; gain = 0.000 ; free physical = 8379 ; free virtual = 13844
+INFO: [Common 17-1381] The checkpoint '/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/project_2/project_2.runs/synth_1/Top_Module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Module_utilization_synth.rpt -pb Top_Module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Jun  1 08:21:05 2024...

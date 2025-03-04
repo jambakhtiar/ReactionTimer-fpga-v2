@@ -1,0 +1,293 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'KEYs[1]'
+Slack : -7.852
+TNS   : -75.688
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:uut4|current_state.WP2'
+Slack : -7.134
+TNS   : -170.313
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:uut4|current_state.WP1'
+Slack : -6.687
+TNS   : -169.796
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:uut4|current_state.IDLE'
+Slack : -4.867
+TNS   : -85.724
+
+Type  : Slow 1200mV 85C Model Setup 'clk_50mhz'
+Slack : -4.806
+TNS   : -174.502
+
+Type  : Slow 1200mV 85C Model Setup 'cpu:uut4|current_state.COMPARE'
+Slack : -4.642
+TNS   : -68.647
+
+Type  : Slow 1200mV 85C Model Setup 'mili_sec:uut1|clk_out_reg'
+Slack : -4.153
+TNS   : -195.549
+
+Type  : Slow 1200mV 85C Model Setup 'clk_1sec:uut2|clk_1hz_reg'
+Slack : -1.656
+TNS   : -9.975
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:uut4|current_state.WP1'
+Slack : 0.037
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:uut4|current_state.COMPARE'
+Slack : 0.209
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'KEYs[1]'
+Slack : 0.218
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_1sec:uut2|clk_1hz_reg'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'mili_sec:uut1|clk_out_reg'
+Slack : 0.405
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:uut4|current_state.WP2'
+Slack : 0.410
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'cpu:uut4|current_state.IDLE'
+Slack : 0.589
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_50mhz'
+Slack : 0.657
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_50mhz'
+Slack : -3.000
+TNS   : -82.670
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'KEYs[1]'
+Slack : -3.000
+TNS   : -20.545
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'mili_sec:uut1|clk_out_reg'
+Slack : -1.285
+TNS   : -118.220
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_1sec:uut2|clk_1hz_reg'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:uut4|current_state.IDLE'
+Slack : 0.369
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:uut4|current_state.WP2'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:uut4|current_state.WP1'
+Slack : 0.411
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'cpu:uut4|current_state.COMPARE'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'KEYs[1]'
+Slack : -7.407
+TNS   : -72.026
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:uut4|current_state.WP2'
+Slack : -6.762
+TNS   : -156.815
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:uut4|current_state.WP1'
+Slack : -6.313
+TNS   : -155.419
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:uut4|current_state.IDLE'
+Slack : -4.395
+TNS   : -76.249
+
+Type  : Slow 1200mV 0C Model Setup 'clk_50mhz'
+Slack : -4.292
+TNS   : -153.352
+
+Type  : Slow 1200mV 0C Model Setup 'cpu:uut4|current_state.COMPARE'
+Slack : -4.151
+TNS   : -62.233
+
+Type  : Slow 1200mV 0C Model Setup 'mili_sec:uut1|clk_out_reg'
+Slack : -3.765
+TNS   : -168.866
+
+Type  : Slow 1200mV 0C Model Setup 'clk_1sec:uut2|clk_1hz_reg'
+Slack : -1.496
+TNS   : -8.072
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:uut4|current_state.COMPARE'
+Slack : 0.202
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:uut4|current_state.WP1'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_1sec:uut2|clk_1hz_reg'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'KEYs[1]'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'mili_sec:uut1|clk_out_reg'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:uut4|current_state.IDLE'
+Slack : 0.578
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_50mhz'
+Slack : 0.600
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'cpu:uut4|current_state.WP2'
+Slack : 0.601
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_50mhz'
+Slack : -3.000
+TNS   : -82.670
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'KEYs[1]'
+Slack : -3.000
+TNS   : -15.388
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'mili_sec:uut1|clk_out_reg'
+Slack : -1.285
+TNS   : -118.220
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_1sec:uut2|clk_1hz_reg'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:uut4|current_state.IDLE'
+Slack : 0.310
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:uut4|current_state.WP1'
+Slack : 0.328
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:uut4|current_state.COMPARE'
+Slack : 0.367
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'cpu:uut4|current_state.WP2'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'KEYs[1]'
+Slack : -3.696
+TNS   : -29.197
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:uut4|current_state.WP2'
+Slack : -3.489
+TNS   : -76.569
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:uut4|current_state.WP1'
+Slack : -3.298
+TNS   : -76.637
+
+Type  : Fast 1200mV 0C Model Setup 'clk_50mhz'
+Slack : -2.674
+TNS   : -73.605
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:uut4|current_state.IDLE'
+Slack : -2.195
+TNS   : -36.584
+
+Type  : Fast 1200mV 0C Model Setup 'cpu:uut4|current_state.COMPARE'
+Slack : -2.184
+TNS   : -30.372
+
+Type  : Fast 1200mV 0C Model Setup 'mili_sec:uut1|clk_out_reg'
+Slack : -1.640
+TNS   : -53.017
+
+Type  : Fast 1200mV 0C Model Setup 'clk_1sec:uut2|clk_1hz_reg'
+Slack : -0.663
+TNS   : -1.879
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:uut4|current_state.WP1'
+Slack : -0.161
+TNS   : -0.257
+
+Type  : Fast 1200mV 0C Model Hold 'KEYs[1]'
+Slack : -0.039
+TNS   : -0.051
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:uut4|current_state.WP2'
+Slack : -0.009
+TNS   : -0.009
+
+Type  : Fast 1200mV 0C Model Hold 'clk_1sec:uut2|clk_1hz_reg'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'mili_sec:uut1|clk_out_reg'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:uut4|current_state.COMPARE'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'cpu:uut4|current_state.IDLE'
+Slack : 0.247
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_50mhz'
+Slack : 0.300
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_50mhz'
+Slack : -3.000
+TNS   : -68.067
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'KEYs[1]'
+Slack : -3.000
+TNS   : -19.301
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'mili_sec:uut1|clk_out_reg'
+Slack : -1.000
+TNS   : -92.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_1sec:uut2|clk_1hz_reg'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:uut4|current_state.WP2'
+Slack : 0.240
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:uut4|current_state.IDLE'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:uut4|current_state.WP1'
+Slack : 0.319
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'cpu:uut4|current_state.COMPARE'
+Slack : 0.344
+TNS   : 0.000
+
+------------------------------------------------------------

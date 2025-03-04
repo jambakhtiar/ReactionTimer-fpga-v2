@@ -1,0 +1,173 @@
+{C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_display_decoder.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_display_decoder.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_display_decoder
+-- Compiling architecture Behavioral of tb_display_decoder
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/cpu.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/cpu.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity cpu
+-- Compiling architecture FSM of cpu
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_clk_1sec.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_clk_1sec.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_clk_1sec
+-- Compiling architecture Behavioral of tb_clk_1sec
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/display_decoder.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/display_decoder.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity display_decoder
+-- Compiling architecture Behavioral of display_decoder
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_debouncer.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_debouncer.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_debouncer
+-- Compiling architecture Behavioral of tb_debouncer
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_div.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_div.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clk_div
+-- Compiling architecture Behavioral of clk_div
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/mili_sec.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/mili_sec.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mili_sec
+-- Compiling architecture Behavioral of mili_sec
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_timer.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_timer.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_timer
+-- Compiling architecture Behavioral of tb_timer
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_BCD.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_BCD.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_BCD
+-- Compiling architecture Behavioral of tb_BCD
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/debouncer.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/debouncer.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity debouncer
+-- Compiling architecture Behavioral of debouncer
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/random_delay.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/random_delay.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity random_delay
+-- Compiling architecture Behavioral of random_delay
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/Top_Module.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/Top_Module.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Top_Module
+-- Compiling architecture Behavioral of Top_Module
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/timer.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/timer.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity timer
+-- Compiling architecture Behavioral of timer
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/BCD.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/BCD.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity BCD
+-- Compiling architecture Behavioral of BCD
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_fsm_configuration.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_fsm_configuration.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_fsm_configuration
+-- Compiling architecture Behavioral of tb_fsm_configuration
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/ClockDivider.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/ClockDivider.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity ClockDivider
+-- Compiling architecture Behavioral of ClockDivider
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_cpu.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_cpu.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity tb_cpu
+-- Compiling architecture Behavioral of tb_cpu
+-- Loading entity cpu
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_1sec.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_1sec.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity clk_1sec
+-- Compiling architecture Behavioral of clk_1sec
+
+} {} {}} {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/fsm_configuration.vhd} {1 {vcom -work work -2002 -explicit -vopt -stats=none {C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/fsm_configuration.vhd}
+Questa Intel Starter FPGA Edition-64 vcom 2021.2 Compiler 2021.04 Apr 14 2021
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity fsm_configuration
+-- Compiling architecture Behavioral of fsm_configuration
+
+} {} {}}

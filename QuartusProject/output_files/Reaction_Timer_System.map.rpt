@@ -1,0 +1,790 @@
+Analysis & Synthesis report for Reaction_Timer_System
+Sat Jun  1 10:31:56 2024
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |Top_Module|cpu:uut4|state_5s
+  9. State Machine - |Top_Module|cpu:uut4|current_state
+ 10. State Machine - |Top_Module|cpu:uut4|timer:spB|state
+ 11. State Machine - |Top_Module|cpu:uut4|timer:spA|state
+ 12. State Machine - |Top_Module|cpu:uut4|fsm_configuration:uut1|state
+ 13. User-Specified and Inferred Latches
+ 14. General Register Statistics
+ 15. Inverted Register Statistics
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat Jun  1 10:31:56 2024           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; Reaction_Timer_System                           ;
+; Top-level Entity Name              ; Top_Module                                      ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 713                                             ;
+;     Total combinational functions  ; 704                                             ;
+;     Dedicated logic registers      ; 256                                             ;
+; Total registers                    ; 256                                             ;
+; Total pins                         ; 70                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                           ;
++----------------------------------------------------------------------------+--------------------+-----------------------+
+; Option                                                                     ; Setting            ; Default Value         ;
++----------------------------------------------------------------------------+--------------------+-----------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                       ;
+; Top-level entity name                                                      ; Top_Module         ; Reaction_Timer_System ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX         ;
+; Use smart compilation                                                      ; Off                ; Off                   ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                    ;
+; Enable compact report table                                                ; Off                ; Off                   ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto                  ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                   ;
+; Preserve fewer node names                                                  ; On                 ; On                    ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                   ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001          ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993             ;
+; State Machine Processing                                                   ; Auto               ; Auto                  ;
+; Safe State Machine                                                         ; Off                ; Off                   ;
+; Extract Verilog State Machines                                             ; On                 ; On                    ;
+; Extract VHDL State Machines                                                ; On                 ; On                    ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                   ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000                  ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                   ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                    ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                    ;
+; Parallel Synthesis                                                         ; On                 ; On                    ;
+; DSP Block Balancing                                                        ; Auto               ; Auto                  ;
+; NOT Gate Push-Back                                                         ; On                 ; On                    ;
+; Power-Up Don't Care                                                        ; On                 ; On                    ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                   ;
+; Remove Duplicate Registers                                                 ; On                 ; On                    ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                   ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                   ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                   ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                   ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                   ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                    ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                   ;
+; Optimization Technique                                                     ; Balanced           ; Balanced              ;
+; Carry Chain Length                                                         ; 70                 ; 70                    ;
+; Auto Carry Chains                                                          ; On                 ; On                    ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                    ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                   ;
+; Auto ROM Replacement                                                       ; On                 ; On                    ;
+; Auto RAM Replacement                                                       ; On                 ; On                    ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                    ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto                  ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto                  ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                    ;
+; Strict RAM Replacement                                                     ; Off                ; Off                   ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                    ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                   ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                    ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                   ;
+; Auto Resource Sharing                                                      ; Off                ; Off                   ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                   ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                   ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                   ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                    ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                   ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                    ;
+; Report Parameter Settings                                                  ; On                 ; On                    ;
+; Report Source Assignments                                                  ; On                 ; On                    ;
+; Report Connectivity Checks                                                 ; On                 ; On                    ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                   ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                     ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation    ;
+; HDL message level                                                          ; Level2             ; Level2                ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                   ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000                  ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000                  ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                   ;
+; Clock MUX Protection                                                       ; On                 ; On                    ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                   ;
+; Block Design Naming                                                        ; Auto               ; Auto                  ;
+; SDC constraint protection                                                  ; Off                ; Off                   ;
+; Synthesis Effort                                                           ; Auto               ; Auto                  ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                    ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                   ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium                ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto                  ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                    ;
+; Synthesis Seed                                                             ; 1                  ; 1                     ;
++----------------------------------------------------------------------------+--------------------+-----------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                  ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+---------+
+; Top_Module.vhd                   ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/Top_Module.vhd        ;         ;
+; mili_sec.vhd                     ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/mili_sec.vhd          ;         ;
+; clk_1sec.vhd                     ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/clk_1sec.vhd          ;         ;
+; debouncer.vhd                    ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/debouncer.vhd         ;         ;
+; cpu.vhd                          ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/cpu.vhd               ;         ;
+; BCD.vhd                          ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/BCD.vhd               ;         ;
+; display_decoder.vhd              ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/display_decoder.vhd   ;         ;
+; timer.vhd                        ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/timer.vhd             ;         ;
+; fsm_configuration.vhd            ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/fsm_configuration.vhd ;         ;
+; random_delay.vhd                 ; yes             ; User VHDL File  ; /home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/random_delay.vhd      ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 713         ;
+;                                             ;             ;
+; Total combinational functions               ; 704         ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 220         ;
+;     -- 3 input functions                    ; 215         ;
+;     -- <=2 input functions                  ; 269         ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 461         ;
+;     -- arithmetic mode                      ; 243         ;
+;                                             ;             ;
+; Total registers                             ; 256         ;
+;     -- Dedicated logic registers            ; 256         ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 70          ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+; Maximum fan-out node                        ; reset~input ;
+; Maximum fan-out                             ; 256         ;
+; Total fan-out                               ; 3056        ;
+; Average fan-out                             ; 2.78        ;
++---------------------------------------------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                         ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
+; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                ; Library Name ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
+; |Top_Module                                 ; 704 (28)          ; 256 (28)     ; 0           ; 0            ; 0       ; 0         ; 70   ; 0            ; |Top_Module                                        ; work         ;
+;    |BCD:uut5_platerA|                       ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|BCD:uut5_platerA                       ; work         ;
+;    |BCD:uut5_platerB|                       ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|BCD:uut5_platerB                       ; work         ;
+;    |BCD:uut5_target_Score|                  ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|BCD:uut5_target_Score                  ; work         ;
+;    |BCD:uut5_test_cycles|                   ; 12 (12)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|BCD:uut5_test_cycles                   ; work         ;
+;    |clk_1sec:uut2|                          ; 20 (20)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|clk_1sec:uut2                          ; work         ;
+;    |cpu:uut4|                               ; 408 (268)         ; 108 (27)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|cpu:uut4                               ; work         ;
+;       |fsm_configuration:uut1|              ; 11 (11)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|cpu:uut4|fsm_configuration:uut1        ; work         ;
+;       |random_delay:uut2|                   ; 25 (25)           ; 15 (15)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|cpu:uut4|random_delay:uut2             ; work         ;
+;       |timer:spA|                           ; 52 (52)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|cpu:uut4|timer:spA                     ; work         ;
+;       |timer:spB|                           ; 52 (52)           ; 28 (28)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|cpu:uut4|timer:spB                     ; work         ;
+;    |debouncer:uut3_key0|                    ; 29 (29)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|debouncer:uut3_key0                    ; work         ;
+;    |debouncer:uut3_key1|                    ; 29 (29)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|debouncer:uut3_key1                    ; work         ;
+;    |debouncer:uut3_key2|                    ; 29 (29)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|debouncer:uut3_key2                    ; work         ;
+;    |debouncer:uut3_key3|                    ; 29 (29)           ; 23 (23)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|debouncer:uut3_key3                    ; work         ;
+;    |display_decoder:uut6_platerATens|       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|display_decoder:uut6_platerATens       ; work         ;
+;    |display_decoder:uut6_platerAUnits|      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|display_decoder:uut6_platerAUnits      ; work         ;
+;    |display_decoder:uut6_platerBTens|       ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|display_decoder:uut6_platerBTens       ; work         ;
+;    |display_decoder:uut6_platerBUnits|      ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|display_decoder:uut6_platerBUnits      ; work         ;
+;    |display_decoder:uut6_target_scoreTens|  ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|display_decoder:uut6_target_scoreTens  ; work         ;
+;    |display_decoder:uut6_target_scoreUnits| ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|display_decoder:uut6_target_scoreUnits ; work         ;
+;    |display_decoder:uut6_test_cyclesTens|   ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|display_decoder:uut6_test_cyclesTens   ; work         ;
+;    |display_decoder:uut6_test_cyclesUnits|  ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|display_decoder:uut6_test_cyclesUnits  ; work         ;
+;    |mili_sec:uut1|                          ; 28 (28)           ; 17 (17)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Top_Module|mili_sec:uut1                          ; work         ;
++---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------+
+; State Machine - |Top_Module|cpu:uut4|state_5s                            ;
++------------------+------------------+-----------------+------------------+
+; Name             ; state_5s.STOP_5s ; state_5s.RUN_5s ; state_5s.IDLE_5s ;
++------------------+------------------+-----------------+------------------+
+; state_5s.IDLE_5s ; 0                ; 0               ; 0                ;
+; state_5s.RUN_5s  ; 0                ; 1               ; 1                ;
+; state_5s.STOP_5s ; 1                ; 0               ; 1                ;
++------------------+------------------+-----------------+------------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |Top_Module|cpu:uut4|current_state                                                                                                                                                                                                                                                                                                                                                                                          ;
++------------------------------+-------------------+-------------------+-----------------------+----------------------+----------------------------+-----------------------+-----------------------+-------------------+-------------------------+---------------------+-----------------------+-------------------+-------------------------+---------------------+------------------------------+----------------------+--------------------+
+; Name                         ; current_state.SP2 ; current_state.SP1 ; current_state.Penalty ; current_state.WINNER ; current_state.CHECK_TARGET ; current_state.COMPARE ; current_state.SAVE_P2 ; current_state.WP2 ; current_state.STIMULUS2 ; current_state.DT_P2 ; current_state.SAVE_P1 ; current_state.WP1 ; current_state.STIMULUS1 ; current_state.DT_P1 ; current_state.WAIT_for_START ; current_state.CONFIG ; current_state.IDLE ;
++------------------------------+-------------------+-------------------+-----------------------+----------------------+----------------------------+-----------------------+-----------------------+-------------------+-------------------------+---------------------+-----------------------+-------------------+-------------------------+---------------------+------------------------------+----------------------+--------------------+
+; current_state.IDLE           ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 0                  ;
+; current_state.CONFIG         ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 1                    ; 1                  ;
+; current_state.WAIT_for_START ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 1                            ; 0                    ; 1                  ;
+; current_state.DT_P1          ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 1                   ; 0                            ; 0                    ; 1                  ;
+; current_state.STIMULUS1      ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 1                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.WP1            ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 1                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.SAVE_P1        ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 1                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.DT_P2          ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 1                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.STIMULUS2      ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 1                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.WP2            ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 1                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.SAVE_P2        ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 1                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.COMPARE        ; 0                 ; 0                 ; 0                     ; 0                    ; 0                          ; 1                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.CHECK_TARGET   ; 0                 ; 0                 ; 0                     ; 0                    ; 1                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.WINNER         ; 0                 ; 0                 ; 0                     ; 1                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.Penalty        ; 0                 ; 0                 ; 1                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.SP1            ; 0                 ; 1                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
+; current_state.SP2            ; 1                 ; 0                 ; 0                     ; 0                    ; 0                          ; 0                     ; 0                     ; 0                 ; 0                       ; 0                   ; 0                     ; 0                 ; 0                       ; 0                   ; 0                            ; 0                    ; 1                  ;
++------------------------------+-------------------+-------------------+-----------------------+----------------------+----------------------------+-----------------------+-----------------------+-------------------+-------------------------+---------------------+-----------------------+-------------------+-------------------------+---------------------+------------------------------+----------------------+--------------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------+
+; State Machine - |Top_Module|cpu:uut4|timer:spB|state ;
++------------+------------+-----------+----------------+
+; Name       ; state.STOP ; state.RUN ; state.IDLE     ;
++------------+------------+-----------+----------------+
+; state.IDLE ; 0          ; 0         ; 0              ;
+; state.RUN  ; 0          ; 1         ; 1              ;
+; state.STOP ; 1          ; 0         ; 1              ;
++------------+------------+-----------+----------------+
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------+
+; State Machine - |Top_Module|cpu:uut4|timer:spA|state ;
++------------+------------+-----------+----------------+
+; Name       ; state.STOP ; state.RUN ; state.IDLE     ;
++------------+------------+-----------+----------------+
+; state.IDLE ; 0          ; 0         ; 0              ;
+; state.RUN  ; 0          ; 1         ; 1              ;
+; state.STOP ; 1          ; 0         ; 1              ;
++------------+------------+-----------+----------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------+
+; State Machine - |Top_Module|cpu:uut4|fsm_configuration:uut1|state ;
++---------------+---------------+--------------+--------------------+
+; Name          ; state.CONFIRM ; state.CONFIG ; state.IDLE         ;
++---------------+---------------+--------------+--------------------+
+; state.IDLE    ; 0             ; 0            ; 0                  ;
+; state.CONFIG  ; 0             ; 1            ; 1                  ;
+; state.CONFIRM ; 1             ; 0            ; 1                  ;
++---------------+---------------+--------------+--------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                 ;
++-----------------------------------------------------+----------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal  ; Free of Timing Hazards ;
++-----------------------------------------------------+----------------------+------------------------+
+; cpu:uut4|stimulus_playerB[0]                        ; cpu:uut4|Selector46  ; yes                    ;
+; cpu:uut4|stimulus_playerB[1]                        ; cpu:uut4|Selector46  ; yes                    ;
+; cpu:uut4|stimulus_playerB[2]                        ; cpu:uut4|Selector46  ; yes                    ;
+; cpu:uut4|stimulus_playerB[3]                        ; cpu:uut4|Selector46  ; yes                    ;
+; cpu:uut4|stimulus_playerA[0]                        ; cpu:uut4|Selector47  ; yes                    ;
+; cpu:uut4|stimulus_playerA[1]                        ; cpu:uut4|Selector47  ; yes                    ;
+; cpu:uut4|stimulus_playerA[2]                        ; cpu:uut4|Selector47  ; yes                    ;
+; cpu:uut4|stimulus_playerA[3]                        ; cpu:uut4|Selector47  ; yes                    ;
+; cpu:uut4|test_cycles_reg[0]                         ; cpu:uut4|WideOr0     ; yes                    ;
+; cpu:uut4|test_cycles_reg[1]                         ; cpu:uut4|WideOr0     ; yes                    ;
+; cpu:uut4|test_cycles_reg[5]                         ; cpu:uut4|WideOr0     ; yes                    ;
+; cpu:uut4|test_cycles_reg[4]                         ; cpu:uut4|WideOr0     ; yes                    ;
+; cpu:uut4|test_cycles_reg[2]                         ; cpu:uut4|WideOr0     ; yes                    ;
+; cpu:uut4|test_cycles_reg[3]                         ; cpu:uut4|WideOr0     ; yes                    ;
+; cpu:uut4|score_playerB_reg[5]                       ; cpu:uut4|Selector54  ; yes                    ;
+; cpu:uut4|score_playerA_reg[5]                       ; cpu:uut4|Selector62  ; yes                    ;
+; cpu:uut4|score_playerB_reg[4]                       ; cpu:uut4|Selector54  ; yes                    ;
+; cpu:uut4|score_playerA_reg[4]                       ; cpu:uut4|Selector62  ; yes                    ;
+; cpu:uut4|score_playerB_reg[3]                       ; cpu:uut4|Selector54  ; yes                    ;
+; cpu:uut4|score_playerA_reg[3]                       ; cpu:uut4|Selector62  ; yes                    ;
+; cpu:uut4|score_playerB_reg[2]                       ; cpu:uut4|Selector54  ; yes                    ;
+; cpu:uut4|score_playerA_reg[2]                       ; cpu:uut4|Selector62  ; yes                    ;
+; cpu:uut4|score_playerB_reg[1]                       ; cpu:uut4|Selector54  ; yes                    ;
+; cpu:uut4|score_playerA_reg[1]                       ; cpu:uut4|Selector62  ; yes                    ;
+; cpu:uut4|score_playerB_reg[0]                       ; cpu:uut4|Selector48  ; yes                    ;
+; cpu:uut4|score_playerA_reg[0]                       ; cpu:uut4|Selector56  ; yes                    ;
+; cpu:uut4|config_enable                              ; cpu:uut4|WideOr7     ; yes                    ;
+; cpu:uut4|next_state.STIMULUS2_1646                  ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.WINNER_1521                     ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|sp1_time[23]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[23]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[22]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[22]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[21]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[21]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[20]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[20]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[19]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[19]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[18]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[18]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[17]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[17]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[16]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[16]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[15]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[15]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[14]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[14]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[13]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[13]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[12]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[12]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[11]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[11]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[10]                               ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[10]                               ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[9]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[9]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[8]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[8]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[7]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[7]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[6]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[6]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[5]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[5]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[4]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[4]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[3]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[3]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[2]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[2]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[1]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[1]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|sp1_time[0]                                ; cpu:uut4|sp1_time[0] ; yes                    ;
+; cpu:uut4|sp2_time[0]                                ; cpu:uut4|sp2_time[2] ; yes                    ;
+; cpu:uut4|next_state.IDLE_1846                       ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.CONFIG_1821                     ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.WP2_1621                        ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.STIMULUS1_1746                  ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.WP1_1721                        ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.COMPARE_1571                    ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.SP2_1446                        ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.SP1_1471                        ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.WAIT_for_START_1796             ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.DT_P2_1671                      ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.Penalty_1496                    ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.CHECK_TARGET_1546               ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.SAVE_P2_1596                    ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|sec_en                                     ; cpu:uut4|WideOr11    ; yes                    ;
+; cpu:uut4|next_state.SAVE_P1_1696                    ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|next_state.DT_P1_1771                      ; cpu:uut4|Selector31  ; yes                    ;
+; cpu:uut4|sec5_en                                    ; cpu:uut4|WideOr12    ; yes                    ;
+; cpu:uut4|stopwatch_enable2                          ; cpu:uut4|WideOr9     ; yes                    ;
+; cpu:uut4|stopwatch_enable1                          ; cpu:uut4|WideOr8     ; yes                    ;
+; Number of user-specified and inferred latches = 96  ;                      ;                        ;
++-----------------------------------------------------+----------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 256   ;
+; Number of registers using Synchronous Clear  ; 86    ;
+; Number of registers using Synchronous Load   ; 12    ;
+; Number of registers using Asynchronous Clear ; 253   ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 12    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------+
+; Inverted Register Statistics                       ;
++------------------------------------------+---------+
+; Inverted Register                        ; Fan out ;
++------------------------------------------+---------+
+; cpu:uut4|fsm_configuration:uut1|score[1] ; 14      ;
+; cpu:uut4|fsm_configuration:uut1|score[3] ; 19      ;
+; Total number of inverted registers = 2   ;         ;
++------------------------------------------+---------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |Top_Module|HEX2[0]~reg0                             ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Top_Module|debouncer:uut3_key0|debounce_counter[2]  ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Top_Module|debouncer:uut3_key3|debounce_counter[10] ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Top_Module|debouncer:uut3_key2|debounce_counter[2]  ;
+; 3:1                ; 20 bits   ; 40 LEs        ; 20 LEs               ; 20 LEs                 ; Yes        ; |Top_Module|debouncer:uut3_key1|debounce_counter[17] ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Top_Module|BCD:uut5_test_cycles|bcd_tens[1]         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Top_Module|BCD:uut5_target_Score|bcd_tens[1]        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Top_Module|BCD:uut5_platerB|bcd_tens[1]             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |Top_Module|BCD:uut5_platerA|bcd_tens[2]             ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |Top_Module|cpu:uut4|Selector60                      ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; No         ; |Top_Module|cpu:uut4|Selector53                      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:02     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sat Jun  1 10:31:52 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Reaction_Timer_System -c Reaction_Timer_System
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file ClockDivider.vhd
+    Info (12022): Found design unit 1: ClockDivider-Behavioral
+    Info (12023): Found entity 1: ClockDivider
+Info (12021): Found 2 design units, including 1 entities, in source file Top_Module.vhd
+    Info (12022): Found design unit 1: Top_Module-Behavioral
+    Info (12023): Found entity 1: Top_Module
+Info (12021): Found 2 design units, including 1 entities, in source file clk_div.vhd
+    Info (12022): Found design unit 1: clk_div-Behavioral
+    Info (12023): Found entity 1: clk_div
+Info (12021): Found 2 design units, including 1 entities, in source file mili_sec.vhd
+    Info (12022): Found design unit 1: mili_sec-Behavioral
+    Info (12023): Found entity 1: mili_sec
+Info (12021): Found 2 design units, including 1 entities, in source file clk_1sec.vhd
+    Info (12022): Found design unit 1: clk_1sec-Behavioral
+    Info (12023): Found entity 1: clk_1sec
+Info (12021): Found 2 design units, including 1 entities, in source file debouncer.vhd
+    Info (12022): Found design unit 1: debouncer-Behavioral
+    Info (12023): Found entity 1: debouncer
+Info (12021): Found 2 design units, including 1 entities, in source file cpu.vhd
+    Info (12022): Found design unit 1: cpu-FSM
+    Info (12023): Found entity 1: cpu
+Info (12021): Found 2 design units, including 1 entities, in source file BCD.vhd
+    Info (12022): Found design unit 1: BCD-Behavioral
+    Info (12023): Found entity 1: BCD
+Info (12021): Found 2 design units, including 1 entities, in source file display_decoder.vhd
+    Info (12022): Found design unit 1: display_decoder-Behavioral
+    Info (12023): Found entity 1: display_decoder
+Info (12021): Found 2 design units, including 1 entities, in source file tb_display_decoder.vhd
+    Info (12022): Found design unit 1: tb_display_decoder-Behavioral
+    Info (12023): Found entity 1: tb_display_decoder
+Info (12021): Found 2 design units, including 1 entities, in source file tb_BCD.vhd
+    Info (12022): Found design unit 1: tb_BCD-Behavioral
+    Info (12023): Found entity 1: tb_BCD
+Info (12021): Found 2 design units, including 1 entities, in source file tb_clk_1sec.vhd
+    Info (12022): Found design unit 1: tb_clk_1sec-Behavioral
+    Info (12023): Found entity 1: tb_clk_1sec
+Info (12021): Found 2 design units, including 1 entities, in source file tb_cpu.vhd
+    Info (12022): Found design unit 1: tb_cpu-Behavioral
+    Info (12023): Found entity 1: tb_cpu
+Info (12021): Found 2 design units, including 1 entities, in source file tb_debouncer.vhd
+    Info (12022): Found design unit 1: tb_debouncer-Behavioral
+    Info (12023): Found entity 1: tb_debouncer
+Info (12021): Found 2 design units, including 1 entities, in source file timer.vhd
+    Info (12022): Found design unit 1: timer-Behavioral
+    Info (12023): Found entity 1: timer
+Info (12021): Found 2 design units, including 1 entities, in source file fsm_configuration.vhd
+    Info (12022): Found design unit 1: fsm_configuration-Behavioral
+    Info (12023): Found entity 1: fsm_configuration
+Info (12021): Found 2 design units, including 1 entities, in source file tb_fsm_configuration.vhd
+    Info (12022): Found design unit 1: tb_fsm_configuration-Behavioral
+    Info (12023): Found entity 1: tb_fsm_configuration
+Info (12021): Found 2 design units, including 1 entities, in source file tb_timer.vhd
+    Info (12022): Found design unit 1: tb_timer-Behavioral
+    Info (12023): Found entity 1: tb_timer
+Info (12021): Found 2 design units, including 1 entities, in source file random_delay.vhd
+    Info (12022): Found design unit 1: random_delay-Behavioral
+    Info (12023): Found entity 1: random_delay
+Info (12127): Elaborating entity "Top_Module" for the top level hierarchy
+Info (12128): Elaborating entity "mili_sec" for hierarchy "mili_sec:uut1"
+Info (12128): Elaborating entity "clk_1sec" for hierarchy "clk_1sec:uut2"
+Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:uut3_key0"
+Info (12128): Elaborating entity "cpu" for hierarchy "cpu:uut4"
+Warning (10036): Verilog HDL or VHDL warning at cpu.vhd(63): object "timer_enable" assigned a value but never read
+Warning (10812): VHDL warning at cpu.vhd(188): sensitivity list already contains sp1_done
+Warning (10492): VHDL Process Statement warning at cpu.vhd(261): signal "sp1_time_w" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(305): signal "sp2_done" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(307): signal "sp2_time_w" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(318): signal "test_cycles_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(320): signal "sp1_time" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(320): signal "sp2_time" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(321): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(322): signal "sp2_time" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(322): signal "sp1_time" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(323): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(328): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(328): signal "target_score_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(328): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(340): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(340): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(343): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(343): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(346): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(346): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(352): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(355): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(358): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(359): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(364): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(365): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(371): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(372): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(377): signal "score_playerB_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu.vhd(378): signal "score_playerA_reg" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "test_cycles_reg", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "score_playerA_reg", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "score_playerB_reg", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "stimulus_playerA", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "stimulus_playerB", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "config_enable", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "stopwatch_enable1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "stopwatch_enable2", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "sec_en", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "sec5_en", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "sp1_time", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu.vhd(187): inferring latch(es) for signal or variable "sp2_time", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "sp2_time[0]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[1]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[2]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[3]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[4]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[5]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[6]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[7]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[8]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[9]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[10]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[11]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[12]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[13]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[14]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[15]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[16]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[17]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[18]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[19]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[20]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[21]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[22]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp2_time[23]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[0]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[1]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[2]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[3]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[4]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[5]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[6]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[7]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[8]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[9]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[10]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[11]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[12]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[13]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[14]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[15]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[16]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[17]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[18]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[19]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[20]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[21]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[22]" at cpu.vhd(187)
+Info (10041): Inferred latch for "sp1_time[23]" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.SP2" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.SP1" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.Penalty" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.WINNER" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.CHECK_TARGET" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.COMPARE" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.SAVE_P2" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.WP2" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.STIMULUS2" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.DT_P2" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.SAVE_P1" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.WP1" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.STIMULUS1" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.DT_P1" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.WAIT_for_START" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.CONFIG" at cpu.vhd(187)
+Info (10041): Inferred latch for "next_state.IDLE" at cpu.vhd(187)
+Info (10041): Inferred latch for "sec5_en" at cpu.vhd(187)
+Info (10041): Inferred latch for "sec_en" at cpu.vhd(187)
+Info (10041): Inferred latch for "stopwatch_enable2" at cpu.vhd(187)
+Info (10041): Inferred latch for "stopwatch_enable1" at cpu.vhd(187)
+Info (10041): Inferred latch for "config_enable" at cpu.vhd(187)
+Info (10041): Inferred latch for "stimulus_playerB[0]" at cpu.vhd(187)
+Info (10041): Inferred latch for "stimulus_playerB[1]" at cpu.vhd(187)
+Info (10041): Inferred latch for "stimulus_playerB[2]" at cpu.vhd(187)
+Info (10041): Inferred latch for "stimulus_playerB[3]" at cpu.vhd(187)
+Info (10041): Inferred latch for "stimulus_playerA[0]" at cpu.vhd(187)
+Info (10041): Inferred latch for "stimulus_playerA[1]" at cpu.vhd(187)
+Info (10041): Inferred latch for "stimulus_playerA[2]" at cpu.vhd(187)
+Info (10041): Inferred latch for "stimulus_playerA[3]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerB_reg[0]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerB_reg[1]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerB_reg[2]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerB_reg[3]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerB_reg[4]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerB_reg[5]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerA_reg[0]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerA_reg[1]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerA_reg[2]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerA_reg[3]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerA_reg[4]" at cpu.vhd(187)
+Info (10041): Inferred latch for "score_playerA_reg[5]" at cpu.vhd(187)
+Info (10041): Inferred latch for "test_cycles_reg[0]" at cpu.vhd(187)
+Info (10041): Inferred latch for "test_cycles_reg[1]" at cpu.vhd(187)
+Info (10041): Inferred latch for "test_cycles_reg[2]" at cpu.vhd(187)
+Info (10041): Inferred latch for "test_cycles_reg[3]" at cpu.vhd(187)
+Info (10041): Inferred latch for "test_cycles_reg[4]" at cpu.vhd(187)
+Info (10041): Inferred latch for "test_cycles_reg[5]" at cpu.vhd(187)
+Info (12128): Elaborating entity "fsm_configuration" for hierarchy "cpu:uut4|fsm_configuration:uut1"
+Info (12128): Elaborating entity "random_delay" for hierarchy "cpu:uut4|random_delay:uut2"
+Info (12128): Elaborating entity "timer" for hierarchy "cpu:uut4|timer:spA"
+Info (12128): Elaborating entity "BCD" for hierarchy "BCD:uut5_target_Score"
+Info (12128): Elaborating entity "display_decoder" for hierarchy "display_decoder:uut6_target_scoreTens"
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "cpu:uut4|stimulus_playerB[3]" merged with LATCH primitive "cpu:uut4|stimulus_playerB[0]"
+    Info (13026): Duplicate LATCH primitive "cpu:uut4|stimulus_playerB[2]" merged with LATCH primitive "cpu:uut4|stimulus_playerB[0]"
+    Info (13026): Duplicate LATCH primitive "cpu:uut4|stimulus_playerB[1]" merged with LATCH primitive "cpu:uut4|stimulus_playerB[0]"
+    Info (13026): Duplicate LATCH primitive "cpu:uut4|stimulus_playerA[3]" merged with LATCH primitive "cpu:uut4|stimulus_playerA[0]"
+    Info (13026): Duplicate LATCH primitive "cpu:uut4|stimulus_playerA[2]" merged with LATCH primitive "cpu:uut4|stimulus_playerA[0]"
+    Info (13026): Duplicate LATCH primitive "cpu:uut4|stimulus_playerA[1]" merged with LATCH primitive "cpu:uut4|stimulus_playerA[0]"
+Warning (13012): Latch cpu:uut4|stimulus_playerB[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.STIMULUS2
+Warning (13012): Latch cpu:uut4|stimulus_playerA[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.STIMULUS1
+Warning (13012): Latch cpu:uut4|test_cycles_reg[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.COMPARE
+Warning (13012): Latch cpu:uut4|test_cycles_reg[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.COMPARE
+Warning (13012): Latch cpu:uut4|test_cycles_reg[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.COMPARE
+Warning (13012): Latch cpu:uut4|test_cycles_reg[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.COMPARE
+Warning (13012): Latch cpu:uut4|test_cycles_reg[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.COMPARE
+Warning (13012): Latch cpu:uut4|test_cycles_reg[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.COMPARE
+Warning (13012): Latch cpu:uut4|score_playerB_reg[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP2
+Warning (13012): Latch cpu:uut4|score_playerA_reg[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP1
+Warning (13012): Latch cpu:uut4|score_playerB_reg[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP2
+Warning (13012): Latch cpu:uut4|score_playerA_reg[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP1
+Warning (13012): Latch cpu:uut4|score_playerB_reg[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP2
+Warning (13012): Latch cpu:uut4|score_playerA_reg[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP1
+Warning (13012): Latch cpu:uut4|score_playerB_reg[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP2
+Warning (13012): Latch cpu:uut4|score_playerA_reg[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP1
+Warning (13012): Latch cpu:uut4|score_playerB_reg[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP2
+Warning (13012): Latch cpu:uut4|score_playerA_reg[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SP1
+Warning (13012): Latch cpu:uut4|score_playerB_reg[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.COMPARE
+Warning (13012): Latch cpu:uut4|score_playerA_reg[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.COMPARE
+Warning (13012): Latch cpu:uut4|config_enable has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.CONFIG
+Warning (13012): Latch cpu:uut4|next_state.WINNER_1521 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.Penalty
+Warning (13012): Latch cpu:uut4|next_state.IDLE_1846 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal debouncer:uut3_key1|enable_stable
+Warning (13012): Latch cpu:uut4|next_state.CONFIG_1821 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.WINNER
+Warning (13012): Latch cpu:uut4|next_state.WP2_1621 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.STIMULUS2
+Warning (13012): Latch cpu:uut4|next_state.WP1_1721 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.STIMULUS1
+Warning (13012): Latch cpu:uut4|next_state.COMPARE_1571 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SAVE_P2
+Warning (13012): Latch cpu:uut4|next_state.WAIT_for_START_1796 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal debouncer:uut3_key1|enable_stable
+Warning (13012): Latch cpu:uut4|next_state.DT_P2_1671 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.SAVE_P1
+Warning (13012): Latch cpu:uut4|next_state.SAVE_P2_1596 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.WP2
+Warning (13012): Latch cpu:uut4|sec_en has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.STIMULUS1
+Warning (13012): Latch cpu:uut4|next_state.SAVE_P1_1696 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.WP1
+Warning (13012): Latch cpu:uut4|next_state.DT_P1_1771 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.Penalty
+Warning (13012): Latch cpu:uut4|sec5_en has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.WINNER
+Warning (13012): Latch cpu:uut4|stopwatch_enable2 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.WP2
+Warning (13012): Latch cpu:uut4|stopwatch_enable1 has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal cpu:uut4|current_state.WP1
+Info (286030): Timing-Driven Synthesis is running
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 801 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 64 output pins
+    Info (21061): Implemented 731 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 117 warnings
+    Info: Peak virtual memory: 618 megabytes
+    Info: Processing ended: Sat Jun  1 10:31:56 2024
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:04
+
+

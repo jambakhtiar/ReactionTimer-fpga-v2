@@ -1,0 +1,34 @@
+Quartus II Archive log --	/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/Project_RTimer.qarlog
+
+Archive:	/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/Project_RTimer.qar
+Date:		Fri May 31 19:22:58 2024
+Quartus II 64-Bit		13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
+
+	=========== Files Selected: ===========
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/BCD.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/ClockDivider.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/Reaction_Timer_System.qpf
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/Reaction_Timer_System.qsf
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/Top_Module.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/clk_1sec.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/clk_div.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/cpu.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/debouncer.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/display_decoder.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/fsm_configuration.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/incremental_db/compiled_partitions/Reaction_Timer_System.db_info
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/mili_sec.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/random_delay.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/tb_BCD.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/tb_clk_1sec.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/tb_cpu.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/tb_debouncer.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/tb_display_decoder.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/tb_fsm_configuration.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/tb_timer.vhd
+/home/jam/Documents/1.Freelancer/inProgress/ReactionTime/QuartusProject/timer.vhd
+/home/jam/altera/13.0sp1/quartus/linux64/assignment_defaults.qdf
+	======= Total: 23 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.

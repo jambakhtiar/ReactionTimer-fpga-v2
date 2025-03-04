@@ -1,0 +1,44 @@
+
+State Machine - |Top_Module|cpu:uut4|state_5s
+Name state_5s.STOP_5s state_5s.RUN_5s state_5s.IDLE_5s 
+state_5s.IDLE_5s 0 0 0 
+state_5s.RUN_5s 0 1 1 
+state_5s.STOP_5s 1 0 1 
+
+State Machine - |Top_Module|cpu:uut4|current_state
+Name current_state.SP2 current_state.SP1 current_state.Penalty current_state.WINNER current_state.CHECK_TARGET current_state.COMPARE current_state.SAVE_P2 current_state.WP2 current_state.STIMULUS2 current_state.DT_P2 current_state.SAVE_P1 current_state.WP1 current_state.STIMULUS1 current_state.DT_P1 current_state.WAIT_for_START current_state.CONFIG current_state.IDLE 
+current_state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+current_state.CONFIG 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+current_state.WAIT_for_START 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+current_state.DT_P1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+current_state.STIMULUS1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+current_state.WP1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+current_state.SAVE_P1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+current_state.DT_P2 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+current_state.STIMULUS2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+current_state.WP2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+current_state.SAVE_P2 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+current_state.COMPARE 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+current_state.CHECK_TARGET 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.WINNER 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.Penalty 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.SP1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+current_state.SP2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |Top_Module|cpu:uut4|timer:spB|state
+Name state.STOP state.RUN state.IDLE 
+state.IDLE 0 0 0 
+state.RUN 0 1 1 
+state.STOP 1 0 1 
+
+State Machine - |Top_Module|cpu:uut4|timer:spA|state
+Name state.STOP state.RUN state.IDLE 
+state.IDLE 0 0 0 
+state.RUN 0 1 1 
+state.STOP 1 0 1 
+
+State Machine - |Top_Module|cpu:uut4|fsm_configuration:uut1|state
+Name state.CONFIRM state.CONFIG state.IDLE 
+state.IDLE 0 0 0 
+state.CONFIG 0 1 1 
+state.CONFIRM 1 0 1 

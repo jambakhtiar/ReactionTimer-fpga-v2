@@ -1,0 +1,841 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+!s11e vcom 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA_lite/22.1std
+T_opt
+!s110 1717234599
+VZdOBg6NU3Ai^aaO=?k0@Q2
+04 6 10 work tb_cpu behavioral 1
+=1-e02be9ab469a-665aeba7-1e6-1380
+!s124 OEM10U6 
+o-quiet -auto_acc_if_foreign -work work
+tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+Ebcd
+Z1 w1717158167
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 57
+Z5 dC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/questasim
+Z6 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/BCD.vhd
+Z7 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/BCD.vhd
+l0
+L5 1
+V[k4F9PBW<m7HmA>c>HJlG2
+!s100 :oXEf==@9R_in_IT9:YFA1
+Z8 OL;C;2021.2;73
+32
+Z9 !s110 1717234587
+!i10b 1
+Z10 !s108 1717234587.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/BCD.vhd|
+Z12 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/BCD.vhd|
+!i113 0
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 3 bcd 0 22 [k4F9PBW<m7HmA>c>HJlG2
+!i122 57
+l14
+L13 28
+VW84:L?HlD=b>MOGXlIhRJ2
+!s100 P5aPf`1W@T6G8Jl9Hh>0=0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 0
+R13
+R14
+Eclk_1sec
+Z15 w1717158618
+R3
+R4
+!i122 58
+R5
+Z16 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_1sec.vhd
+Z17 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_1sec.vhd
+l0
+L4 1
+V`DRaciBfQC<89G[YoD@]i1
+!s100 b58FDJXAFZ]g6>geZ:VNk0
+R8
+32
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_1sec.vhd|
+Z19 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_1sec.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 8 clk_1sec 0 22 `DRaciBfQC<89G[YoD@]i1
+!i122 58
+l15
+L12 21
+V:HZ7:6z_65nShk=8@]jl>1
+!s100 7TSKGe]CzU7b]hJI2CkaA0
+R8
+32
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 0
+R13
+R14
+Eclk_div
+Z20 w1717157701
+Z21 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z22 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R3
+R4
+!i122 59
+R5
+Z23 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_div.vhd
+Z24 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_div.vhd
+l0
+L6 1
+VzXfJQN?8lXgVHFNdLeWXe1
+!s100 CbQ6^gTNU4mah2CUQ?Fkb2
+R8
+32
+R9
+!i10b 1
+R10
+Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_div.vhd|
+Z26 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/clk_div.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R21
+R22
+R3
+R4
+DEx4 work 7 clk_div 0 22 zXfJQN?8lXgVHFNdLeWXe1
+!i122 59
+l17
+Z27 L14 21
+Vz_aZWECQ1[[U53P0=DH4T3
+!s100 3>>_>=iA2zFk8I;S?lBmZ1
+R8
+32
+R9
+!i10b 1
+R10
+R25
+R26
+!i113 0
+R13
+R14
+Eclockdivider
+Z28 w1716721226
+R21
+R22
+R3
+R4
+!i122 60
+R5
+Z29 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/ClockDivider.vhd
+Z30 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/ClockDivider.vhd
+l0
+L6 1
+VB9UUW6KWSUJZ6[9Q7B4lB1
+!s100 fVI@af4:g`HSz5Gi;c_j70
+R8
+32
+R9
+!i10b 1
+R10
+Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/ClockDivider.vhd|
+Z32 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/ClockDivider.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R21
+R22
+R3
+R4
+DEx4 work 12 clockdivider 0 22 B9UUW6KWSUJZ6[9Q7B4lB1
+!i122 60
+l17
+R27
+V`LI0ZZXee^:bi5k]C3K?93
+!s100 Gb]FeT7CJ=if_C:l33e6g3
+R8
+32
+R9
+!i10b 1
+R10
+R31
+R32
+!i113 0
+R13
+R14
+Ecpu
+Z33 w1717233118
+R2
+R3
+R4
+!i122 61
+R5
+Z34 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/cpu.vhd
+Z35 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/cpu.vhd
+l0
+L17 1
+VQ[6:BBI]<_Q@mf=4oB67Y0
+!s100 ;SVeCSUD1b6ocnO>@nb[L0
+R8
+32
+R9
+!i10b 1
+R10
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/cpu.vhd|
+Z37 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/cpu.vhd|
+!i113 0
+R13
+R14
+Afsm
+R2
+R3
+R4
+Z38 DEx4 work 3 cpu 0 22 Q[6:BBI]<_Q@mf=4oB67Y0
+!i122 61
+l127
+L41 401
+VK7@DB51XaF5JKB@n9:cbn3
+!s100 kRAhF`AnjN?DzzWOzGemB3
+R8
+32
+R9
+!i10b 1
+R10
+R36
+R37
+!i113 0
+R13
+R14
+Edebouncer
+Z39 w1717232157
+R21
+R22
+R3
+R4
+!i122 62
+R5
+Z40 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/debouncer.vhd
+Z41 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/debouncer.vhd
+l0
+L6 1
+VL3]12I7a9SZdEPfDe1;2E3
+!s100 bh3LRb4;B[XDQ9VU[ZO8T3
+R8
+32
+R9
+!i10b 1
+R10
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/debouncer.vhd|
+Z43 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/debouncer.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R21
+R22
+R3
+R4
+DEx4 work 9 debouncer 0 22 L3]12I7a9SZdEPfDe1;2E3
+!i122 62
+l20
+L15 41
+V:oOV]nQl<0T[>ciJJCEOl3
+!s100 d0eed1Kne4L_dkHmOk11_0
+R8
+32
+R9
+!i10b 1
+R10
+R42
+R43
+!i113 0
+R13
+R14
+Edisplay_decoder
+Z44 w1717158275
+R21
+R22
+R3
+R4
+!i122 63
+R5
+Z45 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/display_decoder.vhd
+Z46 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/display_decoder.vhd
+l0
+L6 1
+Veag8aiZDbTLAPWP0RlGzc3
+!s100 CB8;J[KdmTo<^8EeC^28O3
+R8
+32
+Z47 !s110 1717234588
+!i10b 1
+R10
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/display_decoder.vhd|
+Z49 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/display_decoder.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R21
+R22
+R3
+R4
+DEx4 work 15 display_decoder 0 22 eag8aiZDbTLAPWP0RlGzc3
+!i122 63
+l14
+L13 19
+VNKTSIRgjOgTP;VD7S@BV11
+!s100 Z?RniMJWEdCPQbdTi;gLX1
+R8
+32
+R47
+!i10b 1
+R10
+R48
+R49
+!i113 0
+R13
+R14
+Efsm_configuration
+Z50 w1717159453
+R2
+R3
+R4
+!i122 64
+R5
+Z51 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/fsm_configuration.vhd
+Z52 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/fsm_configuration.vhd
+l0
+L5 1
+VH`cU^B<BZ3e60QB7^Q?z?2
+!s100 9:McLoH^CZOTJ]1Nj;CSz3
+R8
+32
+R47
+!i10b 1
+Z53 !s108 1717234588.000000
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/fsm_configuration.vhd|
+Z55 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/fsm_configuration.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 17 fsm_configuration 0 22 H`cU^B<BZ3e60QB7^Q?z?2
+!i122 64
+l21
+L17 41
+VF0M0D>EiGmPXZBbkbI]4a0
+!s100 cj7>1?01ogTV=dIHLOO6=0
+R8
+32
+R47
+!i10b 1
+R53
+R54
+R55
+!i113 0
+R13
+R14
+Emili_sec
+Z56 w1717157799
+R2
+R3
+R4
+!i122 65
+R5
+Z57 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/mili_sec.vhd
+Z58 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/mili_sec.vhd
+l0
+L5 1
+V;eC8nP5U>KmE:0DnOR]W?1
+!s100 >ATm>@cGVfl6R<9A67ClQ0
+R8
+32
+R47
+!i10b 1
+R53
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/mili_sec.vhd|
+Z60 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/mili_sec.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 8 mili_sec 0 22 ;eC8nP5U>KmE:0DnOR]W?1
+!i122 65
+l16
+L13 21
+V8eXjkJc;@LLfb8YRDan=I0
+!s100 54NOkS2;kecVFfz:oA=FZ2
+R8
+32
+R47
+!i10b 1
+R53
+R59
+R60
+!i113 0
+R13
+R14
+Erandom_delay
+Z61 w1717160164
+R2
+R3
+R4
+!i122 66
+R5
+Z62 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/random_delay.vhd
+Z63 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/random_delay.vhd
+l0
+L5 1
+VVhL=cNhAk?5N2PYVl1C?n0
+!s100 iAMJ@IP;9C]Pn>=?@UY[j0
+R8
+32
+R47
+!i10b 1
+R53
+Z64 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/random_delay.vhd|
+Z65 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/random_delay.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 12 random_delay 0 22 VhL=cNhAk?5N2PYVl1C?n0
+!i122 66
+l16
+L13 22
+VKa[[4RiIYBId2NG9mFcN13
+!s100 82V;^1n@VklU4?:Qa<8YN1
+R8
+32
+R47
+!i10b 1
+R53
+R64
+R65
+!i113 0
+R13
+R14
+Etb_bcd
+Z66 w1717158972
+R2
+R3
+R4
+!i122 67
+R5
+Z67 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_BCD.vhd
+Z68 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_BCD.vhd
+l0
+L5 1
+VAobbFL=JVLVSma?gYO5ai0
+!s100 Rz7Zm]C0]e6hjmSI?i51[0
+R8
+32
+R47
+!i10b 1
+R53
+Z69 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_BCD.vhd|
+Z70 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_BCD.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 6 tb_bcd 0 22 AobbFL=JVLVSma?gYO5ai0
+!i122 67
+l20
+L8 88
+VXBT`kQZI_Z]h:3:kRhnAh3
+!s100 nAh9SCWJMZ]CmIKE<8c7z1
+R8
+32
+R47
+!i10b 1
+R53
+R69
+R70
+!i113 0
+R13
+R14
+Etb_clk_1sec
+Z71 w1717159046
+R3
+R4
+!i122 68
+R5
+Z72 8C:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_clk_1sec.vhd
+Z73 FC:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_clk_1sec.vhd
+l0
+L4 1
+VmTH]M[@gcJT`=U?CHK`TK0
+!s100 QagbdJzQZjQMPBaDDo7fS3
+R8
+32
+R47
+!i10b 1
+R53
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_clk_1sec.vhd|
+Z75 !s107 C:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_clk_1sec.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 11 tb_clk_1sec 0 22 mTH]M[@gcJT`=U?CHK`TK0
+!i122 68
+l22
+L7 51
+VCV;kA=QTIJ8C:<V5H1nUn2
+!s100 =?mBOi[8PlU]UJOkA9IVU2
+R8
+32
+R47
+!i10b 1
+R53
+R74
+R75
+!i113 0
+R13
+R14
+Etb_cpu
+Z76 w1717234573
+R2
+R3
+R4
+!i122 69
+R5
+Z77 8C:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_cpu.vhd
+Z78 FC:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_cpu.vhd
+l0
+L5 1
+V=c=`PQ2k311`9?hEDhz232
+!s100 5C@_V571F3?zXlOeek[[:3
+R8
+32
+R47
+!i10b 1
+R53
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_cpu.vhd|
+Z80 !s107 C:\Users\mhenr\OneDrive\Ambiente de Trabalho\QuartusProject_v2\QuartusProject\tb_cpu.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R38
+R2
+R3
+R4
+DEx4 work 6 tb_cpu 0 22 =c=`PQ2k311`9?hEDhz232
+!i122 69
+l31
+L8 137
+VOH^YO<jV`anY`<YIk4[c83
+!s100 deeY6DC:idQ1bDMH9nOMI0
+R8
+32
+R47
+!i10b 1
+R53
+R79
+R80
+!i113 0
+R13
+R14
+Etb_debouncer
+Z81 w1717159217
+R3
+R4
+!i122 70
+R5
+Z82 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_debouncer.vhd
+Z83 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_debouncer.vhd
+l0
+L4 1
+VbRdE@GN7HgA^gQDHN:<eD0
+!s100 F]S0HPckCn5Ja9ehD4hNh0
+R8
+32
+R47
+!i10b 1
+R53
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_debouncer.vhd|
+Z85 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_debouncer.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 12 tb_debouncer 0 22 bRdE@GN7HgA^gQDHN:<eD0
+!i122 70
+l28
+L7 71
+VAoAgS14d<[OJLTm_dVmd`1
+!s100 <nM`e`EiajA4`bj7=Kz]]1
+R8
+32
+R47
+!i10b 1
+R53
+R84
+R85
+!i113 0
+R13
+R14
+Etb_display_decoder
+Z86 w1717159705
+R3
+R4
+!i122 71
+R5
+Z87 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_display_decoder.vhd
+Z88 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_display_decoder.vhd
+l0
+L4 1
+VOZ01h3k4^`HDiOk_B_>YN2
+!s100 ZXo?[EWAUAgAaz^`QicXk2
+R8
+32
+R47
+!i10b 1
+R53
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_display_decoder.vhd|
+Z90 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_display_decoder.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R3
+R4
+DEx4 work 18 tb_display_decoder 0 22 OZ01h3k4^`HDiOk_B_>YN2
+!i122 71
+l17
+L7 31
+V0cz64ZBDD[<Ijgg>DXzcg3
+!s100 K8HAogc6=EUQ[dFWfgiL:1
+R8
+32
+R47
+!i10b 1
+R53
+R89
+R90
+!i113 0
+R13
+R14
+Etb_fsm_configuration
+Z91 w1717159569
+R2
+R3
+R4
+!i122 72
+R5
+Z92 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_fsm_configuration.vhd
+Z93 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_fsm_configuration.vhd
+l0
+L5 1
+VhbPY:zIhh`9=S@1n@CkF`2
+!s100 Tc0TXkEI=[od5TXbz6cXE0
+R8
+32
+R47
+!i10b 1
+R53
+Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_fsm_configuration.vhd|
+Z95 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_fsm_configuration.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 20 tb_fsm_configuration 0 22 hbPY:zIhh`9=S@1n@CkF`2
+!i122 72
+l34
+L8 83
+V0G0Mnl^jg[8j_eT[I:8I_3
+!s100 F:b`3ibF;`I4TOG?bV9ll3
+R8
+32
+R47
+!i10b 1
+R53
+R94
+R95
+!i113 0
+R13
+R14
+Etb_timer
+Z96 w1717159675
+R2
+R3
+R4
+!i122 73
+R5
+Z97 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_timer.vhd
+Z98 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_timer.vhd
+l0
+L5 1
+VETWLiJ2OmS]F9?kGMgnQZ3
+!s100 e?gBZHg[8ioZ46l?]MX[d0
+R8
+32
+Z99 !s110 1717234589
+!i10b 1
+R53
+Z100 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_timer.vhd|
+Z101 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/tb_timer.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 8 tb_timer 0 22 ETWLiJ2OmS]F9?kGMgnQZ3
+!i122 73
+l32
+L8 78
+VCBZXM>n@P7jZ@MMJA>4CI3
+!s100 zMza7<mo5lRm4ma[l02Wj2
+R8
+32
+R99
+!i10b 1
+R53
+R100
+R101
+!i113 0
+R13
+R14
+Etimer
+Z102 w1717159319
+R2
+R3
+R4
+!i122 74
+R5
+Z103 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/timer.vhd
+Z104 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/timer.vhd
+l0
+L5 1
+VHhLZR`XjC2Lm[>3;62To=0
+!s100 <dkT=gWB2cTGbUi?YlJTC3
+R8
+32
+R99
+!i10b 1
+Z105 !s108 1717234589.000000
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/timer.vhd|
+Z107 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/timer.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 5 timer 0 22 HhLZR`XjC2Lm[>3;62To=0
+!i122 74
+l20
+L16 38
+V4TVXc^b>?oHk2M5DcS:KX0
+!s100 W[[34niDMi:Ql=f_0?5bN1
+R8
+32
+R99
+!i10b 1
+R105
+R106
+R107
+!i113 0
+R13
+R14
+Etop_module
+Z108 w1717232299
+R2
+R3
+R4
+!i122 75
+R5
+Z109 8C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/Top_Module.vhd
+Z110 FC:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/Top_Module.vhd
+l0
+L9 1
+Vh]ibla8jL4R47zfN@L0X72
+!s100 7O^RjOC32D9A<9T@8^LHz0
+R8
+32
+R99
+!i10b 1
+R105
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-vopt|-stats=none|C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/Top_Module.vhd|
+Z112 !s107 C:/Users/mhenr/OneDrive/Ambiente de Trabalho/QuartusProject_v2/QuartusProject/Top_Module.vhd|
+!i113 0
+R13
+R14
+Abehavioral
+R2
+R3
+R4
+DEx4 work 10 top_module 0 22 h]ibla8jL4R47zfN@L0X72
+!i122 75
+l148
+L32 299
+V<TZfz5L<EJN>N;K]=>7T80
+!s100 jI>7e@1XVQde]1mM9gb1O2
+R8
+32
+R99
+!i10b 1
+R105
+R111
+R112
+!i113 0
+R13
+R14

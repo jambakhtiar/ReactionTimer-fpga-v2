@@ -1,0 +1,139 @@
+# Compile of BCD.vhd was successful.
+# Compile of clk_1sec.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of ClockDivider.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of debouncer.vhd was successful.
+# Compile of display_decoder.vhd was successful.
+# Compile of fsm_configuration.vhd was successful.
+# Compile of mili_sec.vhd was successful.
+# Compile of random_delay.vhd was successful.
+# Compile of tb_BCD.vhd was successful.
+# Compile of tb_clk_1sec.vhd was successful.
+# Compile of tb_cpu.vhd was successful.
+# Compile of tb_debouncer.vhd was successful.
+# Compile of tb_display_decoder.vhd was successful.
+# Compile of tb_fsm_configuration.vhd was successful.
+# Compile of tb_timer.vhd was successful.
+# Compile of timer.vhd was successful.
+# Compile of Top_Module.vhd was successful.
+# 19 compiles, 0 failed with no errors.
+vsim work.tb_cpu
+# vsim work.tb_cpu 
+# Start time: 10:16:24 on Jun 01,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_cpu(behavioral)#1
+add wave -position insertpoint sim:/tb_cpu/uut/*
+run
+# Compile of BCD.vhd was successful.
+# Compile of clk_1sec.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of ClockDivider.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of debouncer.vhd was successful.
+# Compile of display_decoder.vhd was successful.
+# Compile of fsm_configuration.vhd was successful.
+# Compile of mili_sec.vhd was successful.
+# Compile of random_delay.vhd was successful.
+# Compile of tb_BCD.vhd was successful.
+# Compile of tb_clk_1sec.vhd was successful.
+# Compile of tb_cpu.vhd was successful.
+# Compile of tb_debouncer.vhd was successful.
+# Compile of tb_display_decoder.vhd was successful.
+# Compile of tb_fsm_configuration.vhd was successful.
+# Compile of tb_timer.vhd was successful.
+# Compile of timer.vhd was successful.
+# Compile of Top_Module.vhd was successful.
+# 19 compiles, 0 failed with no errors.
+vsim work.tb_cpu
+# End time: 10:22:14 on Jun 01,2024, Elapsed time: 0:05:50
+# Errors: 0, Warnings: 6
+# vsim work.tb_cpu 
+# Start time: 10:22:14 on Jun 01,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_cpu(behavioral)#1
+add wave -position insertpoint sim:/tb_cpu/uut/*
+# Can't move the Now cursor.
+view -new wave
+# .main_pane.wave1.interior.cs.body.pw.wf
+add wave -position insertpoint sim:/tb_cpu/*
+add wave sim:/tb_cpu/uut/*
+add wave -r /*
+add wave -r /*
+run
+# Compile of BCD.vhd was successful.
+# Compile of clk_1sec.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of ClockDivider.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of debouncer.vhd was successful.
+# Compile of display_decoder.vhd was successful.
+# Compile of fsm_configuration.vhd was successful.
+# Compile of mili_sec.vhd was successful.
+# Compile of random_delay.vhd was successful.
+# Compile of tb_BCD.vhd was successful.
+# Compile of tb_clk_1sec.vhd was successful.
+# Compile of tb_cpu.vhd was successful.
+# Compile of tb_debouncer.vhd was successful.
+# Compile of tb_display_decoder.vhd was successful.
+# Compile of tb_fsm_configuration.vhd was successful.
+# Compile of tb_timer.vhd was successful.
+# Compile of timer.vhd was successful.
+# Compile of Top_Module.vhd was successful.
+# 19 compiles, 0 failed with no errors.
+vsim work.tb_cpu
+# End time: 10:28:12 on Jun 01,2024, Elapsed time: 0:05:58
+# Errors: 0, Warnings: 2
+# vsim work.tb_cpu 
+# Start time: 10:28:12 on Jun 01,2024
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_cpu(behavioral)#1
+add wave -r /*
+run
+# Compile of BCD.vhd was successful.
+# Compile of clk_1sec.vhd was successful.
+# Compile of clk_div.vhd was successful.
+# Compile of ClockDivider.vhd was successful.
+# Compile of cpu.vhd was successful.
+# Compile of debouncer.vhd was successful.
+# Compile of display_decoder.vhd was successful.
+# Compile of fsm_configuration.vhd was successful.
+# Compile of mili_sec.vhd was successful.
+# Compile of random_delay.vhd was successful.
+# Compile of tb_BCD.vhd was successful.
+# Compile of tb_clk_1sec.vhd was successful.
+# Compile of tb_cpu.vhd was successful.
+# Compile of tb_debouncer.vhd was successful.
+# Compile of tb_display_decoder.vhd was successful.
+# Compile of tb_fsm_configuration.vhd was successful.
+# Compile of tb_timer.vhd was successful.
+# Compile of timer.vhd was successful.
+# Compile of Top_Module.vhd was successful.
+# 19 compiles, 0 failed with no errors.
+vsim work.tb_cpu
+# End time: 10:36:39 on Jun 01,2024, Elapsed time: 0:08:27
+# Errors: 0, Warnings: 2
+# vsim work.tb_cpu 
+# Start time: 10:36:39 on Jun 01,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.tb_cpu(behavioral)#1
+add wave -r /*
+run
+# End time: 10:38:29 on Jun 01,2024, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 1
